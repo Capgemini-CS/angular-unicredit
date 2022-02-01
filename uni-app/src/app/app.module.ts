@@ -7,6 +7,7 @@ import { SidebarModule } from 'ng-sidebar';
 import { MobilePhoneComponent } from './mobile-phone/mobile-phone.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SidebarModule.forRoot()
+    SidebarModule.forRoot(),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

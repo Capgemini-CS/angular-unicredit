@@ -1,0 +1,16 @@
+.general{
+    border:2px solid black;
+    text-align: center;
+}
+
+.fr {
+    border: 2px solid red;
+}
+
+.sr{
+    border:2px solid green;
+}
+
+.tr{
+    border:2px solid blue;
+}

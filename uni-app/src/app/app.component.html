@@ -1,29 +1,34 @@
-<router-outlet>
-
-</router-outlet>
-
 <ng-sidebar-container>
 
   <!-- Sidebar -->  
   <ng-sidebar [opened] = "opened">
+
     <p>Sidebar Contents</p>
     <button (click) = "toggleSidebar()">
       close Sidebar
     </button>
 
     <ul class=menu>
-      <li><a routerLink="/">Inreg. Mobile Phone</a></li>
-      <li><a routerLink="/register">Register Form</a></li>
-      <li><a routerLink="/contact">Contact Form</a></li>
+      <li><a routerLink="/" (click) = "toggleSidebar()">Inreg. Mobile Phone</a></li>
+      <li><a routerLink="/register-form" (click) = "toggleSidebar()">Register Form</a></li>
+      <li><a routerLink="/contact-form" (click) = "toggleSidebar()">Contact Form</a></li>
     </ul>
     
   </ng-sidebar>
 
   <div ng-sidebar-content>
-    <!-- Page content -->
+
+    <img class="logo" src="uni-app\src\images\capgemini.png" alt="Capgemini Logo">
+    <br>
+    <!-- Page Header -->
     <button (click) = "toggleSidebar()">
       Open Sidebar
     </button>
+
+    <!-- Page Body -->
+    <router-outlet>
+
+    </router-outlet>
   </div>
 
 </ng-sidebar-container>
