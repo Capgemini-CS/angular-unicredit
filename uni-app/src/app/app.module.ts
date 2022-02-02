@@ -8,13 +8,15 @@ import { MobilePhoneComponent } from './mobile-phone/mobile-phone.component';
 import { RegisterFormComponent } from './register-form/register-form.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MobilePhoneComponent,
     RegisterFormComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
