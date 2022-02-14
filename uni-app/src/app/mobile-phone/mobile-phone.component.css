@@ -1,16 +1,27 @@
-.general{
+/* .general{
     border:2px solid black;
     text-align: center;
 }
 
 .fr {
-    border: 2px solid red;
+    border: 1px solid black;
 }
 
-.sr{
-    border:2px solid green;
+.sr {
+    border: 1px solid black;
 }
 
-.tr{
-    border:2px solid blue;
-}
+.tr {
+    border: 1px solid black;
+} */
+.demo-table {
+    width: 100%;
+  }
+  
+  .demo-button-container {
+    padding-bottom: 16px;
+  }
+  
+  .demo-button + .demo-button {
+    margin-left: 8px;
+  }
